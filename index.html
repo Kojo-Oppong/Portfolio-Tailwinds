@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prince Darfour</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
   <!-- Navigation Bar -->
-  <nav class="flex justify-between items-center px-10 py-5">
-    
+  <nav class="flex justify-between items-center px-40 py-5 text-white font-bold bg-green-500">
+
     <div class="text-sm font-bold">Prince Darfour Oppong</div>
 
     <div class="flex space-x-8 text-sm">
@@ -20,41 +22,108 @@
       <a href="#" class="hover:underline">Github</a>
     </div>
 
+
+
   </nav>
 
   <!-- Main Section -->
-  <div class="flex flex-row md:flex-row justify-between items-center px-4 md:px-10 py-10 md:py-20">
-    <!-- Left Side: Text Content -->
-    <div class="max-w-lg text-justify md:text-left">
-      <h1 class="text-3xl md:text-5xl font-bold leading-tight">
-        Hi I'm Prince <br> Oppong Darfour a <br> Web Developer from <br> Ghana.
-      </h1>
-      <p class="mt-4 md:mt-6 text-white-600 text-sm md:text-base">
-        I possess a strong grasp of essential languages and frameworks including HTML, CSS, JavaScript, TypeScript, React.js, Angular, MongoDB, Express.js. My passion lies in refining my expertise and gaining hands-on experience in crafting dynamic and responsive web applications.
-      </p>
-      <button class="mt-4 md:mt-8 bg-green-600 text-white px-4 md:px-6 py-2 md:py-2 rounded-full flex items-center space-x-2 hover:bg-teal-700 text-sm md:text-base">
-        <span>Explore</span>
-        <span>➔</span>
-      </button>
+  <section>
+    <div class="flex md:flex-row justify-between items-center px-8 md:px-40 py-5 md:py-20">
+
+      <div class="max-w-lg text-justify md:text-left">
+        <h2 class="text-3xl md:text-5xl font-bold text-align-justify leading-5">
+          Hi I'm Prince <br> Oppong Darfour a <br>
+          Web Developer from <br> Ghana.
+        </h2>
+        <p class="mt-4 md:mt-6 text-white-600 text-sm md:text-base text-align-justify">
+          I possess a strong grasp of essential languages and frameworks including HTML, CSS, JavaScript, TypeScript,
+          React.js, Angular, MongoDB, Express.js. My passion lies in refining my expertise and gaining hands-on
+          experience in crafting dynamic and responsive web applications.
+        </p>
+        <button
+          class="mt-4 md:mt-8 bg-green-600 text-white px-4 md:px-6 py-2 md:py-2 rounded-full flex items-center space-x-2 hover:bg-teal-700 text-sm md:text-base">
+          <span>Explore</span>
+          <span class="rotate-90">➔</span>
+        </button>
+
+        <button
+          class="md:mt-8 bg-green-600 text-white px-4 md:px-6 py-2 md:py-2 rounded-full flex items-center space-x-2 hover:bg-teal-700 text-sm md:text-base"><a
+            href="#" class="hover:underline">Download CV</a>
+        </button>
+      </div>
+
+      <div class="w-48 h-60 md:w-80 md:h-80  flex items-center justify-center">
+        <img src="./assets/images/bgimg.png" alt="My Pic">
+      </div>
+
+      <div class="flex flex-col space-y-4 w-4 h-32 gap-2">
+        <span class="after:content-['|'] rotate-90 space-y-2">Follow Me</span>
+        <a href="" class="text-xl md:text-2xl"> <img src="./assets/images/instagram.png" alt="IG"></a>
+        <a href="https://x.com/khojooppong?s=21" class="text-xl md:text-2xl"> <img src="./assets/images/twitter.png"
+            alt="X"></a>
+        <a href="#" class="text-xl md:text-2xl"> <img src="./assets/images/linkedin.png" alt="Linkedin"></a>
+      </div>
+
+    </div>
+  </section>
+
+<!-- Skills Section -->
+  <section>
+    <div class="text-center mb-8">
+     <h1 class="mb-16 font-bold text-4xl">My Skills</h1>
+     <div class="grid grid-cols-2 gap-8">
+      <div>
+        <div><img src="./assets/images/asset1.png" alt="">
+        </div>
+        <p>Html</p>
+      </div>
+      <div>
+        <div class="bg-gray-200 rounded-full p-4">
+          <img src="./assets/images/asset2.png" alt="">
+        </div>
+        <p>CSS</p>
+      </div>
+      <div>
+        <div>
+          <img src="./assets/images/asset3.png" alt="">
+        </div>
+        <p>JavaScript</p>
+      </div>
+      <div>
+        <div>
+          <img src="./assets/images/asset4.png" alt="">
+        </div>
+        <p>Tailwind</p>
+      </div>
+      <div>
+        <div>
+          <img src="./assets/images/asset10.png" alt="">
+        </div>
+        <p>Github</p>
+      </div>
+      <div>
+        <div>
+          <img src="./assets/images/asset6.png" alt="" class="w-25 h-">
+        </div>
+        <p class="font-bold">ReactJs</p>
+      </div>
+     </div>
     </div>
 
-    <!-- Right Side: Image and Social Links -->
-    <div class="mt-8 md:mt-0 flex flex-col items-center space-y-4">
-      <!-- Placeholder for the image -->
-      <div class="w-48 h-60 md:w-64 md:h-80  flex items-center justify-center">
-        <img src="./assets/images/WhatsApp Image.jpeg" alt="My Pic">
-      </div>
-      <!-- Social Media Links -->
-      <div class="flex flex-col items-center space-y-2">
-        <span class="text-sm font-semibold">Follow Me</span>
-        <!-- <div class="w-10 md:w-12 border-t border-gray-300"></div> -->
-        <div class="flex flex-col space-y-2 w-4 h-4">
-          <a href="" class="text-xl md:text-2xl"> <img src="./assets/images/instagram.png" alt="IG"></a>
-          <a href="#" class="text-xl md:text-2xl">💼</a>
-          <a href="#" class="text-xl md:text-2xl">🐦</a>
-        </div>
+  </section>
+
+  <!-- Experience Section -->
+   <section>
+
+    <div>
+      <h2>Projects</h2>
+      <div>
+        hi
       </div>
     </div>
-  </div>
+
+   </section>
+
 </body>
+
 </html>
