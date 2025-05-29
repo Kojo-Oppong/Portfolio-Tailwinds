@@ -10,11 +10,11 @@
 
 <body>
   <!-- Navigation Bar -->
-  <nav class="flex justify-between items-center px-40 py-5 text-white font-bold bg-green-500">
+  <nav class="flex justify-between items-center px-20 py-5 text-white font-bold bg-green-500">
 
     <div class="text-sm font-bold">Prince Darfour Oppong</div>
 
-    <div class="flex space-x-8 text-sm">
+    <div class="flex space-x-8 text-sm hidden md:block lg:block">
       <a href="#" class="underline">Home</a>
       <a href="#" class="hover:underline">Skills</a>
       <a href="#" class="hover:underline">Projects</a>
@@ -22,13 +22,13 @@
       <a href="#" class="hover:underline">Github</a>
     </div>
 
-
+    <img class="md:hidden block " src="./assets/images/icons8-hamburger-menu-50.png" alt="icons8-hamburger-menu-50">
 
   </nav>
 
   <!-- Main Section -->
   <section>
-    <div class="flex md:flex-row justify-between items-center px-8 md:px-40 py-5 md:py-20">
+    <div class="flex md:flex-row justify-between items-center px-8 md:px-20 py-5 md:py-20 md:flex-col">
 
       <div class="max-w-lg text-justify md:text-left">
         <h2 class="text-3xl md:text-5xl font-bold text-align-justify leading-5">
@@ -57,7 +57,7 @@
       </div>
 
       <div class="flex flex-col space-y-4 w-4 h-32 gap-2">
-        <span class="after:content-['|'] rotate-90 space-y-2">Follow Me</span>
+        <span class="after:content-['|'] rotate-90 space-y-4">Follow Me</span>
         <a href="" class="text-xl md:text-2xl"> <img src="./assets/images/instagram.png" alt="IG"></a>
         <a href="https://x.com/khojooppong?s=21" class="text-xl md:text-2xl"> <img src="./assets/images/twitter.png"
             alt="X"></a>
@@ -67,53 +67,53 @@
     </div>
   </section>
 
-<!-- Skills Section -->
+  <!-- Skills Section -->
   <section>
     <div class="text-center mb-8">
-     <h1 class="mb-16 font-bold text-4xl">My Skills</h1>
-     <div class="grid grid-cols-2 gap-8">
-      <div>
-        <div><img src="./assets/images/asset1.png" alt="">
-        </div>
-        <p>Html</p>
-      </div>
-      <div>
-        <div class="bg-gray-200 rounded-full p-4">
-          <img src="./assets/images/asset2.png" alt="">
-        </div>
-        <p>CSS</p>
-      </div>
-      <div>
+      <h1 class="mb-16 font-bold text-4xl">My Skills</h1>
+      <div class="grid grid-cols-2 gap-4">
         <div>
-          <img src="./assets/images/asset3.png" alt="">
+          <div><img src="./assets/images/asset1.png" alt="">
+          </div>
+          <p>Html</p>
         </div>
-        <p>JavaScript</p>
-      </div>
-      <div>
         <div>
-          <img src="./assets/images/asset4.png" alt="">
+          <div class="bg-gray-200 rounded-full p-4">
+            <img src="./assets/images/asset2.png" alt="">
+          </div>
+          <p>CSS</p>
         </div>
-        <p>Tailwind</p>
-      </div>
-      <div>
         <div>
-          <img src="./assets/images/asset10.png" alt="">
+          <div>
+            <img src="./assets/images/asset3.png" alt="">
+          </div>
+          <p>JavaScript</p>
         </div>
-        <p>Github</p>
-      </div>
-      <div>
         <div>
-          <img src="./assets/images/asset6.png" alt="" class="w-25 h-">
+          <div>
+            <img src="./assets/images/asset4.png" alt="">
+          </div>
+          <p>Tailwind</p>
         </div>
-        <p class="font-bold">ReactJs</p>
+        <div>
+          <div>
+            <img src="./assets/images/asset10.png" alt="">
+          </div>
+          <p>Github</p>
+        </div>
+        <div>
+          <div>
+            <img src="./assets/images/asset6.png" alt="" class="w-25 h-">
+          </div>
+          <p class="font-bold">ReactJs</p>
+        </div>
       </div>
-     </div>
     </div>
 
   </section>
 
   <!-- Experience Section -->
-   <section>
+  <section>
 
     <div>
       <h2>Projects</h2>
@@ -122,7 +122,7 @@
       </div>
     </div>
 
-   </section>
+  </section>
 
 </body>
 
