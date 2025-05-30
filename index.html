@@ -6,79 +6,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prince Darfour</title>
   <script src="https://cdn.tailwindcss.com"></script>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({ reset: true });
+  </script>
+  <script src="./main.js" defer></script>
 </head>
 
 <body class="">
+  <html class="scroll-smooth md:scroll-auto">
+
+  </html>
   <!-- Navigation Bar -->
-  <nav class="flex justify-evenly font-bold">
+  <nav class="sticky top-0 w-full h-16 bg-white flex justify-between items-center px-4 md:px-10 lg:px-44 z-50">
 
-    <div class="text-normal font-bold">Prince Darfour Oppong</div>
+    <a href="http:index.html" class="text-normal font-bold">
+      <img class="w-8 h-8" src="./assets/images/logo.jpg" alt="">
+    </a>
 
-    <div class="flex flex-row justify-evenly gap-8 text-normal">
-      <a href="#" class="underline">Home</a>
-      <a href="#" class="hover:underline">Skills</a>
-      <a href="#" class="hover:underline">Projects</a>
-      <a href="#" class="hover:underline">Contact</a>
-      <a href="#" class="hover:underline">Github</a>
+    <div class="hidden md:flex justify-evenly gap-8 text-normal">
+      <a href="#hero" class="underline">Home</a>
+      <a href="#skills" class="hover:underline">Skills</a>
+      <a href="#projects" class="hover:underline">Projects</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+      <a href="https://github.com/dashboard" class="hover:underline">Github</a>
     </div>
 
   </nav>
 
   <!-- Main Section -->
-  <section class="animate__animated animate__backInDown animate__slower">
-    <div class="flex flex-row items-center justify-center gap-16 mt-4 h-screen">
-      <div class="flex flex-col gap-6 text-justify">
+
+  <section id="hero" class="scroll animate__animated animate__backInDown animate__slower">
+    <div class="flex flex-col-reverse md:flex-row flex-col items-center justify-between h-screen w-full px-4 md:px-10">
+      <div class="flex flex-col gap-4 w-full md:w-1/2">
         <h2 class="text-3xl font-bold">
           Hi I'm Prince <br> Oppong Darfour a <br>
           Web Developer from <br> Ghana.
         </h2>
-        <p class="w-[350px] text-white-600 text-sm">
-          I possess a strong grasp of essential languages and frameworks including HTML, CSS, JavaScript, TypeScript,
-          React.js, Angular, MongoDB, Express.js. My passion lies in refining my expertise and gaining hands-on
+        <p class="w-full text-white-600 text-sm">
+          I possess a strong grasp of essential languages and frameworks including HTML, CSS, JavaScript,
+          React.js. My passion lies in refining my expertise and gaining hands-on
           experience in crafting dynamic and responsive web applications.
         </p>
 
         <div>
-          <button class="bg-green-600 text-white px-5 py-2 rounded-full items-center hover:bg-teal-700 text-sm">
-            <span>Explore</span>
-            <span class="rotate-90">➔</span>
-          </button>
+          <a href="#skills">
+            <button class="bg-[#3E6553] text-white px-5 py-2 rounded-full items-center hover:bg-teal-700 text-sm">
+              <span>Explore</span>
+            </button>
+          </a>
 
-          <button class="bg-green-600 text-white px-5 py-2 rounded-full items-center hover:bg-teal-700 text-sm"><a
-              href="#" class="hover:underline">Download CV</a>
+          <button class="bg-[#3E6553] text-white px-5 py-2 rounded-full items-center hover:bg-teal-700 text-sm"><a
+              href="./assets/images/OPPONG PRINCE_DARFOUR_Cover_Letter.pdf" class="hover:underline">Download CV</a>
           </button>
 
         </div>
 
       </div>
 
-      <div class=" w-[20%] mt-4">
-        <img src="./assets/images/bgimg.png" alt="My Pic">
-      </div>
-
-
-      <div class="flex flex-col items-center ml-3.5  gap-8 font-2xl">
-        <span class="rotate-90 w-16 leading-3 text-xs">Follow Me</span>
-        <div class="flex flex-col w-4 gap-2">
-          <a href=""> <img src="./assets/images/instagram.png" alt="IG"></a>
-          <a href="https://x.com/khojooppong?s=21" class="text-xl md:text-2xl"> <img src="./assets/images/twitter.png"
-              alt="X"></a>
-          <a href="#" class="text-xl md:text-2xl"> <img src="./assets/images/linkedin.png" alt="Linkedin"></a>
+      <div class="flex">
+        <div class="">
+          <img class="w-full h-[70vh]" src="./assets/images/bgimg.png" alt="My Pic">
         </div>
+        <div class="flex flex-col justify-center items-center gap-8">
+          <span class="rotate-90 w-full  text-xs">Follow Me</span>
+          <div class="flex flex-col w-4 gap-2">
+            <a href=""> <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5"
+                src="./assets/images/instagram.png" alt="IG"></a>
+            <a href="https://x.com/khojooppong?s=21" class="text-xl md:text-2xl"> <img
+                class="transform transition duration-300 hover:scale-110 hover:-translate-y-5"
+                src="./assets/images/twitter.png" alt="X"></a>
+            <a href="#" class="text-xl md:text-2xl"> <img
+                class="transform transition duration-300 hover:scale-110 hover:-translate-y-5"
+                src="./assets/images/linkedin.png" alt="Linkedin"></a>
+          </div>
+        </div>
+
       </div>
+
+
 
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section class="animate__animated animate__backInDown animate__slower">
-    <h1 class="mb-16 font-bold text-center text-4xl">My Skills</h1>
+  <section id="skills" class="animate__animated animate__backInDown animate__slower">
+    <h1 class="mb-4 font-bold text-center text-4xl">My Skills</h1>
 
-    <div class="grid grid-cols-3 text-center gap-y-100 h-screen w-[50%] mx-auto h-400px]">
+    <div class="grid grid-cols-3 text-center gap-y-100 w-[50%] mx-auto h-[600px] items-center">
       <div class="w-[80px]">
         <div class="bg-gray-200 rounded-full">
           <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5"
@@ -129,133 +145,137 @@
 
   </section>
 
-  <!-- Experience Section -->
-  <section class="animate__animated animate__backInDown animate__slower">
-    <!-- <div class=" flex items-center justify-center p-4 mx-[80px] rounded-2xl"> -->
-    <h1 class="text-4xl font-bold text-center mb-16 mt-10">Projects</h1>
-    <div class=" grid justify-center p-4 mx-[80px] rounded-2xl m-auto w-50 bg-green-600 text-white">
+  <!-- Project Section -->
+  <section id="project" class=" animate__backInDown animate__slower h-full px-12">
+    <div class="bg-[#3E6553] p-4 md:p-10 rounded-2xl">
 
-      <div class="flex flex-row gap-6">
-        <!-- Card 1 -->
-        <div class="bg-whitesmoke rounded-2xl p-6 shadow-lg flex flex-col items-center color-black">
-          <h2 class="text-lg font-bold mb-2">Authentication</h2>
-          <p class=" text-center">An auditable blockchain voting system for creating a secure voting
-            system</p>
-        </div>
-        <!-- Card 2 -->
-        <div class="bg-white rounded-2xl p-6 shadow-lg flex flex-col items-center">
-          <img src="pokemon-logo.png" alt="Pokemon Logo" class="w-16 h-16 mb-4" />
-          <h2 class="text-lg font-bold mb-2">Buy Pokémon</h2>
-          <p class="text-gray-600 text-center">A decentralized application (dApp) for buying and collecting Pokémon
-            using blockchain technology.</p>
-        </div>
-        <!-- Card 3 -->
-        <div class="bg-white rounded-2xl p-6 shadow-lg flex flex-col items-center">
-          <div class="w-16 h-16 bg-gray-200 rounded-lg mb-4 flex items-center justify-center">
-            <svg class="w-8 h-8 text-blue-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M4 4h16v12H4zM2 2v16h20V2H2zm4 14h12v-2H6v2zm0-4h12v-2H6v2z" />
-            </svg>
-          </div>
-          <h2 class="text-lg font-bold mb-2">D Mailer</h2>
-          <p class="text-gray-600 text-center">A custom electronic mailing application for sending and receiving
-            emails.</p>
-        </div>
+      <h1 class="text-4xl font-bold text-center mb-16 mt-10 text-white">Projects</h1>
+      <div class="justify-center p-4 mx-[80px] rounded-2xl w-50">
 
+        <div class="flex flex-row gap-6">
+          <!-- Card 1 -->
+          <a href="">
+            <div
+              class="rounded-2xl p-6 shadow-lg flex flex-col items-center bg-white transform transition duration-300 hover:scale-110 hover:-translate-y-5">
+              <img src="./assets/images/authlogo.png" alt="Authentication Logo" class="w-32 h-16 mb-4" />
+              <h2 class="text-lg font-bold mb-2">Authentication</h2>
+              <p class=" text-center">A website created for users to log in and register to an e-commerce website at
+                their convenince.</p>
+            </div>
+          </a>
+          <!-- Card 2 -->
+          <a href="">
+            <div
+              class="rounded-2xl p-6 shadow-lg flex flex-col items-center bg-white transform transition duration-300 hover:scale-110 hover:translate-y-5">
+              <img src="./assets/images/asset0.png" alt="Pokemon Logo" class="w-64 h-16 mb-4" />
+              <h2 class="text-lg font-bold mb-2">Save our Soul</h2>
+              <p class="text-gray-600 text-center">A charity website created to spread love to orphan children and war
+                displaced kids accross the globe.
+              </p>
+            </div>
+          </a>
+          <!-- Card 3 -->
+          <a href="http://">
+            <div
+              class="rounded-2xl p-6 shadow-lg flex flex-col items-center bg-white transform transition duration-300 hover:scale-110 hover:-translate-y-5">
+              <img src="./assets/images/restaurant-logo.jpg" alt="Pokemon Logo" class="w-64 h-16 mb-4" />
+              <h2 class="text-lg font-bold mb-2">Food Landing Page</h2>
+              <p class="text-gray-600 text-center">development of a responsive website for a renowed restaurant in
+                Ghana.</p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
     </div>
-
   </section>
 
   <section>
-    <div class="bg-green-600 min-h-screen py-2 ml-10 mt-16">
-      <h2 class="text-4xl font-bold text-center text-white mb-10">Experience</h2>
+    <div class="">
+      <div class="min-h-screen py-2 ml-10 mr-10 mt-16 bg-[#3E6553] p-4 md:p-10 rounded-2xl">
+        <h2 class="text-4xl font-bold text-center text-white mb-10">Experience</h2>
 
-      <div class="max-w-3xl mx-auto space-y-4">
+        <div class="max-w-3xl mx-auto space-y-4">
 
-        <!-- Experience 1 -->
-        <div class="bg-white rounded-lg p-6 shadow">
-          <h3 class="font-semibold text-gray-800">
-            mNotify– West Lagon, GH | Software Engineer Intern | 07/2024 – 10/2024
-          </h3>
-          <ul class="list-decimal list-inside mt-4 text-gray-700 space-y-2">
-            <li>Develop APIs using PHP and Laravel to facilitate communication between the application and external
-              services.</li>
-            <li>Connect and integrate APIs with the application, ensuring seamless functionality for sending bulk
-              messages.</li>
-            <li>Implement Vue.js for front-end development, enhancing user interaction and application performance.</li>
-            <li>Integrate third-party sign-on systems, improving user authentication and access management.</li>
-            <li>Work on automation features for bulk SMS, voice, and email, optimizing communication workflows and
-              increasing operational efficiency.</li>
-          </ul>
+          <!-- Experience 1 -->
+          <div class="bg-white rounded-lg p-6 shadow">
+            <h3 class="font-semibold text-gray-800">
+              MestAfrica– Accra, GH | Software Engineer Code Class | 05/2025 – 10/2025
+            </h3>
+            <ul class="list-decimal list-inside mt-4 text-gray-700 space-y-2">
+              <li>Develop APIs using PHP and Laravel to facilitate communication between the application and external
+                services.</li>
+              <li>Connect and integrate APIs with the application, ensuring seamless functionality for sending bulk
+                messages.</li>
+              <li>Implement Vue.js for front-end development, enhancing user interaction and application performance.
+              </li>
+              <li>Integrate third-party sign-on systems, improving user authentication and access management.</li>
+              <li>Work on automation features for bulk SMS, voice, and email, optimizing communication workflows and
+                increasing operational efficiency.</li>
+            </ul>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="bg-white rounded-lg p-6 shadow">
+            <h3 class="font-semibold text-gray-800">
+              BUILD with Mowblox, GH | Blockchain Developer | 08/2024 – 10/2024
+            </h3>
+            <ul class="list-decimal list-inside mt-4 text-gray-700 space-y-2">
+              <li>Develop user interface screens using Next.js and TypeScript, enhancing user experience and ensuring a
+                responsive and intuitive voting interface.</li>
+              <li>Design and implement election smart contracts using Solidity, enabling secure and tamper-proof voting
+                processes.</li>
+              <li>Contribute to the integration of blockchain technology, ensuring the system’s transparency and
+                trustworthiness, which significantly improves the integrity and reliability of the election process.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Experience 3 -->
+          <!-- <div class="bg-white rounded-lg p-6 shadow">
+            <h3 class="font-semibold text-gray-800">
+              Mowbox | Volunteer Frontend Developer | 04/2024 – Present
+            </h3>
+            <ul class="list-decimal list-inside mt-4 text-gray-700 space-y-2">
+              <li>Create and update dynamic, reusable components to enhance user interaction and overall experience.
+                Ensure components are responsive, accessible, and align with modern web standards.</li>
+            </ul>
+          </div> -->
+
         </div>
-
-        <!-- Experience 2 -->
-        <div class="bg-white rounded-lg p-6 shadow">
-          <h3 class="font-semibold text-gray-800">
-            BUILD with Mowblox, GH | Blockchain Developer | 08/2024 – 10/2024
-          </h3>
-          <ul class="list-decimal list-inside mt-4 text-gray-700 space-y-2">
-            <li>Develop user interface screens using Next.js and TypeScript, enhancing user experience and ensuring a
-              responsive and intuitive voting interface.</li>
-            <li>Design and implement election smart contracts using Solidity, enabling secure and tamper-proof voting
-              processes.</li>
-            <li>Contribute to the integration of blockchain technology, ensuring the system’s transparency and
-              trustworthiness, which significantly improves the integrity and reliability of the election process.</li>
-          </ul>
-        </div>
-
-        <!-- Experience 3 -->
-        <div class="bg-white rounded-lg p-6 shadow">
-          <h3 class="font-semibold text-gray-800">
-            Mowbox | Volunteer Frontend Developer | 04/2024 – Present
-          </h3>
-          <ul class="list-decimal list-inside mt-4 text-gray-700 space-y-2">
-            <li>Create and update dynamic, reusable components to enhance user interaction and overall experience.
-              Ensure components are responsive, accessible, and align with modern web standards.</li>
-          </ul>
-        </div>
-
       </div>
     </div>
 
+
   </section>
 
-  <div class="max-w-6xl mx-auto px-6 py-16">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+  <div id="contact" class="flex flex-col max-w-6xl mt-10 px-10 py-16">
+    <div class="grid md:grid-cols-2 gap-12">
 
       <!-- Left side: Contact Info -->
-      <div>
+      <div class="flex flex-col">
         <h2 class="text-4xl font-bold mb-8">
           Reach out to me <br>
           via any of the given <br>
           information
         </h2>
-        <div class="mb-6">
+        <div>
           <p class="font-semibold mb-1">Call me</p>
           <div class="flex items-center space-x-2">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M3 5h2l3 7-1.5 2.5L12 21l3-3 2.5-1.5 7 3V3H3z" />
-            </svg>
-            <span>+233 54 235 6778</span>
+            <span>+233 54 547 6473</span>
           </div>
         </div>
         <div>
-          <p class="font-semibold mb-1">Write me by mail</p>
+          <p class="font-semibold mb-1 font-bold">Write me by mail</p>
           <div class="flex items-center space-x-2">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M16 12H8m8 0l-4-4m4 4l-4 4m0-4H4" />
-            </svg>
-            <span>dangelokwakye@gmail.com</span>
+            <a href="mailto:princedarf1@gmail.com"><span class="font-light">princedarf1@gmail.com</span></a>
           </div>
         </div>
       </div>
 
       <!-- Right side: Contact Form -->
       <div>
-        <form class="space-y-6">
+        <form class="">
           <div>
             <label class="block mb-1 text-sm text-gray-600" for="name">Name</label>
             <input class="w-full border-b border-gray-400 focus:outline-none py-2" type="text" id="name" name="name">
@@ -270,7 +290,7 @@
               rows="3"></textarea>
           </div>
           <button type="submit"
-            class="inline-flex items-center px-6 py-3 bg-green-800 text-white rounded-md hover:bg-green-700">
+            class="inline-flex items-center mt-10 px-6 py-3 bg-[#3E6553] text-white rounded-md hover:bg-green-700">
             Send Message
             <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -278,37 +298,47 @@
           </button>
         </form>
       </div>
+
     </div>
   </div>
 
-  <footer class="bg-white py-8">
-    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+
+
+  <footer class="bg-white py-32">
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-3 gap-8 text-sm">
 
       <!-- Left: Name -->
       <div>
-        <h1 class="font-bold text-lg">D'ANGELO KWAKYE</h1>
+        <h1 class="font-bold text-lg">PRINCE DARFOUR</h1>
       </div>
 
       <!-- Middle: Address -->
       <div>
-        <h2 class="font-semibold mb-2">Address</h2>
+        <h2 class="font-bold mb-2">Address</h2>
         <p>Accra - Ghana</p>
-        <p>Community 4 - Tema</p>
-        <p>6 bono lane</p>
+        <p>Dansoman - Accra</p>
+        <p>9 Sorghum Street</p>
       </div>
 
       <!-- Right: Contact -->
       <div>
         <h2 class="font-semibold mb-2">Contact Me</h2>
-        <p class="mb-2">+233 54 235 6778</p>
-        <div class="flex space-x-4">
+        <p class="mb-2">+233 (545 476 473)</p>
+        <div class="flex space-x-4 w-16">
           <a href="#" class="hover:text-gray-700">
+            <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5"
+              src="./assets/images/linkedin.png" alt="">
             <i class="fab fa-facebook-f"></i>
           </a>
           <a href="#" class="hover:text-gray-700">
+            <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5"
+              src="./assets/images/instagram.png" alt="">
             <i class="fab fa-instagram"></i>
+
           </a>
           <a href="#" class="hover:text-gray-700">
+            <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5"
+              src="./assets/images/twitter.png" alt="">
             <i class="fab fa-x-twitter"></i>
           </a>
         </div>
@@ -317,8 +347,8 @@
     </div>
 
     <!-- Bottom line -->
-    <div class="mt-8 text-center text-xs text-gray-500">
-      © D'Angelo. All rights reserved
+    <div class="mt-32 text-center text-xs text-gray-500">
+      © Kojo Oppong. All rights reserved
     </div>
   </footer>
 
