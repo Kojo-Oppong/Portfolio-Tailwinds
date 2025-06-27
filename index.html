@@ -2,289 +2,327 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prince Darfour</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script>
-    ScrollReveal({ reset: true });
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Darfour</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({ reset: true });
+    </script>
 </head>
 
 <body class="scroll-smooth">
-  <!-- Navigation Bar -->
-  <nav class="sticky top-0 w-full h-16 bg-white flex justify-between items-center px-4 md:px-10 lg:px-44 z-50">
-    <a href="index.html" class="text-normal font-bold">
-      <img class="w-8 h-8" src="./assets/images/logo.jpg" alt="Logo">
-    </a>
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 w-full h-16 bg-white flex justify-between items-center px-4 md:px-10 lg:px-44 z-50">
+        <a href="index.html" class="text-normal font-bold">
+            <img class="w-8 h-8" src="./assets/images/logo.jpg" alt="Logo">
+        </a>
 
-    <button class="md:hidden hamburger text-2xl" aria-label="Toggle menu">☰</button>
+        <button class="md:hidden hamburger text-2xl" aria-label="Toggle menu">☰</button>
 
-    <div class="nav-links hidden md:flex justify-evenly gap-8 text-normal">
-      <a href="#hero" class="underline">Home</a>
-      <a href="#skills" class="hover:underline">Skills</a>
-      <a href="#projects" class="hover:underline">Projects</a>
-      <a href="#contact" class="hover:underline">Contact</a>
-      <a href="https://github.com/dashboard" target="_blank" class="hover:underline">Github</a>
+        <div class="nav-links hidden md:flex justify-evenly gap-8 text-normal">
+            <a href="#hero" class="underline">Home</a>
+            <a href="#skills" class="hover:underline">Skills</a>
+            <a href="#projects" class="hover:underline">Projects</a>
+            <a href="#contact" class="hover:underline">Contact</a>
+            <a href="https://github.com/dashboard" target="_blank" class="hover:underline">Github</a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden flex-col bg-white w-full absolute top-16 left-0 z-40 md:hidden">
+        <a href="#hero" class="py-2 px-4 hover:bg-gray-100">Home</a>
+        <a href="#skills" class="py-2 px-4 hover:bg-gray-100">Skills</a>
+        <a href="#projects" class="py-2 px-4 hover:bg-gray-100">Projects</a>
+        <a href="#contact" class="py-2 px-4 hover:bg-gray-100">Contact</a>
+        <a href="https://github.com/dashboard" target="_blank" class="py-2 px-4 hover:bg-gray-100">Github</a>
     </div>
-  </nav>
-
-  <!-- Mobile Menu -->
-  <div class="mobile-menu hidden flex-col bg-white w-full absolute top-16 left-0 z-40 md:hidden">
-    <a href="#hero" class="py-2 px-4 hover:bg-gray-100">Home</a>
-    <a href="#skills" class="py-2 px-4 hover:bg-gray-100">Skills</a>
-    <a href="#projects" class="py-2 px-4 hover:bg-gray-100">Projects</a>
-    <a href="#contact" class="py-2 px-4 hover:bg-gray-100">Contact</a>
-    <a href="https://github.com/dashboard" target="_blank" class="py-2 px-4 hover:bg-gray-100">Github</a>
-  </div>
-
-  <div class="bg-gray-200 rounded-2xl">
 
     <!-- Main Section -->
-    <section id="hero" class="animate__animated animate__backInDown animate__slower">
-      <div
-        class="flex flex-col-reverse md:flex-row items-center justify-between min-h-screen w-full px-4 sm:px-6 md:px-10 lg:px-20">
-        <div class="flex flex-col gap-4 w-full md:w-1/2 py-8">
-          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">
-            Hi I'm Prince <br> Oppong Darfour a <br>
-            Web Developer from <br> Ghana.
-          </h2>
-          <p class="w-full text-gray-600 text-sm sm:text-base">
-            I possess a strong grasp of essential languages and frameworks including HTML, CSS, JavaScript,
-            React.js. My passion lies in refining my expertise and gaining hands-on
-            experience in crafting dynamic and responsive web applications.
-          </p>
-          <div class="flex gap-4">
-            <a href="#skills">
-              <button class="bg-[#3E6553] text-white px-4 sm:px-5 py-2 rounded-full hover:bg-teal-700 text-sm">
-                Explore
-              </button>
-            </a>
-            <a href="./assets/images/OPPONG PRINCE_DARFOUR_Cover_Letter.pdf">
-              <button class="bg-[#3E6553] text-white px-4 sm:px-5 py-2 rounded-full hover:bg-teal-700 text-sm">
-                Download CV
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <div class="flex w-full md:w-1/2 items-center">
-          <div class="w-full">
-            <img class="w-full max-h-[50vh] md:max-h-[70vh] object-contain" src="./assets/images/bgimg.png"
-              alt="My Pic">
-          </div>
-          <div class="flex flex-col justify-center items-center gap-4 sm:gap-8">
-            <span class="rotate-90 text-xs hidden sm:block">Follow Me</span>
-            <div class="flex flex-col gap-2 w-4 sm:w-6">
-              <a href="https://www.instagram.com/accounts/settings/?entrypoint=profile" target="_blank">
-                <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5 w-full"
-                  src="./assets/images/instagram.png" alt="IG">
-              </a>
-              <a href="https://x.com/khojooppong?s=21" target="_blank">
-                <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5 w-full"
-                  src="./assets/images/twitter.png" alt="X">
-              </a>
-              <a href="https://www.linkedin.com/in/prince-darfour-a8195b23b/" target="_blank">
-                <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5 w-full"
-                  src="./assets/images/linkedin.png" alt="Linkedin">
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="animate__animated animate__backInDown animate__slower py-12">
-      <h1 class="mb-8 font-bold text-center text-2xl sm:text-3xl md:text-4xl">My Skills</h1>
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-6 sm:gap-8 w-full max-w-2xl mx-auto">
-        <div class="flex flex-col items-center">
-          <div class="bg-gray-200 rounded-full p-2">
-            <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5 w-16 sm:w-20"
-              src="./assets/images/asset1.png" alt="HTML">
-          </div>
-          <p class="mt-2 text-center">HTML</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <div class="bg-gray-200 rounded-full p-2">
-            <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5 w-16 sm:w-20"
-              src="./assets/images/asset2.png" alt="CSS">
-          </div>
-          <p class="mt-2 text-center">CSS</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <div class="bg-gray-200 rounded-full p-2">
-            <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5 w-16 sm:w-20"
-              src="./assets/images/asset3.png" alt="JavaScript">
-          </div>
-          <p class="mt-2 text-center">JavaScript</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <div>
-            <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5 w-20 sm:w-24"
-              src="./assets/images/asset4.png" alt="Tailwind">
-          </div>
-          <p class="mt-2 text-center">Tailwind</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <div>
-            <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5 w-24 sm:w-28"
-              src="./assets/images/asset10.png" alt="Github">
-          </div>
-          <p class="mt-2 text-center">Github</p>
-        </div>
-        <div class="flex flex-col items-center">
-          <div>
-            <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5 w-12 sm:w-16"
-              src="./assets/images/asset6.png" alt="ReactJs">
-          </div>
-          <p class="mt-2 text-center">ReactJs</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Project Section -->
-    <section id="projects" class="animate__backInDown animate__slower py-12 px-4 sm:px-6 md:px-12">
-      <div class="bg-[#3E6553] p-4 sm:p-6 md:p-10 rounded-2xl">
-        <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 md:mb-16 text-white">Projects</h1>
-        <div class="grid  sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          <!-- Card 1 -->
-          <a href="https://prime-auuttos.netlify.app/" target="_blank">
+    <div class="bg-gray-200 rounded-2xl">
+        <section id="hero" class="animate__animated animate__backInDown animate__slower">
             <div
-              class="rounded-2xl p-6 shadow-lg flex flex-col items-center bg-white transform transition duration-300 hover:scale-105">
-              <img src="./assets/images/books.jpg" alt="Authentication Logo" class="w-32 h-16 mb-4 object-contain" />
-              <h2 class="text-base sm:text-lg font-bold mb-2">BookieApp</h2>
-              <p class="text-gray-600 text-center text-sm">Built and designed a responsive Library management webapp
-                using React, tailwind css and javascript with Restful API integrations</p>
-            </div>
-          </a>
-          <!-- Card 2 -->
-          <a href="https://prime-auuttos.netlify.app/" target="_blank">
-            <div
-              class="rounded-2xl p-6 shadow-lg flex flex-col items-center bg-white transform transition duration-300 hover:scale-105">
-              <img src="./assets/images/handyman.jpg" alt="Authentication Logo" class="w-32 h-16 mb-4 object-contain" />
-              <h2 class="text-base sm:text-lg font-bold mb-2">Prime auttos</h2>
-              <p class="text-gray-600 text-center text-sm">An advertising website for users to post adverts and reach
-                large user market</p>
-            </div>
-          </a>
-          <a href="https://loquacious-pegasus-f7eea0.netlify.app/" target="_blank">
-            <div
-              class="rounded-2xl p-6 shadow-lg flex flex-col items-center bg-white transform transition duration-300 hover:scale-105">
-              <img
-                src="https://media.istockphoto.com/id/1223631367/fr/vectoriel/groupe-multiculturel-de-personnes-se-tient-ensemble-%C3%A9quipe-de-coll%C3%A8gues-%C3%A9tudiants-hommes.jpg?s=1024x1024&w=is&k=20&c=A1r8nGmqG0govRnPsmjcF3Ib13S75gsAjyYBSr2WOJg="
-                alt="Authentication Logo" class="w-32 h-16 mb-4 object-contain" />
-              <h2 class="text-base sm:text-lg font-bold mb-2">Event Hive</h2>
-              <p class="text-gray-600 text-center text-sm">A class room project for a College event management system
-                with Restful Api integration and Frontend developmnt</p>
-            </div>
-          </a>
-          <!-- Card 3 -->
-          <a href="https://authentication-blue-seven.vercel.app/" target="_blank">
-            <div
-              class="rounded-2xl p-6 shadow-lg flex flex-col items-center bg-white transform transition duration-300 hover:scale-105">
-              <img src="./assets/images/authlogo.png" alt="Authentication Logo" class="w-32 h-16 mb-4 object-contain" />
-              <h2 class="text-base sm:text-lg font-bold mb-2">Authentication</h2>
-              <p class="text-gray-600 text-center text-sm">A website created for users to log in and register to an
-                e-commerce website at their convenience</p>
-            </div>
-          </a>
-          <!-- Card 4 -->
-          <a href="https://landing-page-mu-bice.vercel.app/" target="_blank">
-            <div
-              class="rounded-2xl p-6 shadow-lg flex flex-col items-center bg-white transform transition duration-300 hover:scale-105">
-              <img src="./assets/images/asset0.png" alt="Landing-Page" class="w-32 sm:w-48 h-16 mb-4 object-contain" />
-              <h2 class="text-base sm:text-lg font-bold mb-2">Save our Soul</h2>
-              <p class="text-gray-600 text-center text-sm">A charity website created to spread love to orphan children
-                and
-                war displaced kids across the globe.</p>
-            </div>
-          </a>
-          <!-- Card 5 -->
-          <a href="#">
-            <div
-              class="rounded-2xl p-6 shadow-lg flex flex-col items-center bg-white transform transition duration-300 hover:scale-105">
-              <img src="./assets/images/restaurant-logo.jpg" alt="Pokemon Logo"
-                class="w-32 sm:w-48 h-16 mb-4 object-contain" />
-              <h2 class="text-base sm:text-lg font-bold mb-2">Food Landing Page</h2>
-              <p class="text-gray-600 text-center text-sm">Development of a responsive website for a renowned restaurant
-                in Ghana.</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
+                class="flex flex-col-reverse md:flex-row items-center justify-between min-h-screen w-full px-4 sm:px-6 md:px-10 lg:px-20">
+                <div class="flex flex-col gap-4 w-full md:w-1/2 py-8">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">
+                        Hi I'm Prince <br> Oppong Darfour a <br>
+                        Web Developer from <br> Ghana.
+                    </h2>
+                    <p class="w-full text-gray-600 text-sm sm:text-base">
+                        I possess a strong grasp of essential languages and frameworks including HTML, CSS, JavaScript,
+                        React.js. My passion lies in refining my expertise and gaining hands-on
+                        experience in crafting dynamic and responsive web applications.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#skills">
+                            <button
+                                class="bg-[#3E6553] text-white px-4 sm:px-5 py-2 rounded-full hover:bg-teal-700 text-sm">
+                                Explore
+                            </button>
+                        </a>
+                        <a href="./assets/images/PRINCE_DARFOUR_Resume.pdf">
+                            <button
+                                class="bg-[#3E6553] text-white px-4 sm:px-5 py-2 rounded-full hover:bg-teal-700 text-sm">
+                                Download CV
+                            </button>
+                        </a>
+                    </div>
+                </div>
 
-    <!-- Experience Section -->
-    <section class="py-12 px-4 sm:px-6 md:px-10">
-      <div class="bg-[#3E6553] p-4 sm:p-6 md:p-10 rounded-2xl">
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-white mb-8 md:mb-10">Experience</h2>
-        <div class="max-w-4xl mx-auto space-y-6">
-          <!-- Experience 1 -->
-          <div class="bg-white rounded-lg p-6 shadow">
-            <h3 class="font-semibold text-gray-800 text-base sm:text-lg">
-              MestAfrica – Accra, GH | Software Engineer - Frontend Web Developer | 2025 – Current
-            </h3>
-            <ul class="list-decimal list-inside mt-4 text-gray-700 space-y-2 text-sm sm:text-base">
-              <li>Developed and maintained responsive, user-friendly interfaces with <strong>React.js</strong>,
-                <strong>Tailwind CSS</strong>, and <strong>JavaScript</strong>.
-              </li>
-              <li>Collaborated with UX/UI designers to implement high-fidelity wireframes into production-ready code.
-              </li>
-              <li>Integrated <strong>REST APIs</strong> to handle dynamic data and enhance user interactivity.</li>
-              <li>Optimized performance, improving load speed by 35% through lazy loading and code splitting.</li>
-              <li>Utilized <strong>Git</strong>, GitHub, and Agile methodology for effective team collaboration.</li>
-              <li>Built reusable components and <strong>custom hooks</strong>, improving development efficiency and code
-                maintainability.</li>
-            </ul>
-          </div>
-          <!-- Experience 2 -->
-          <div class="bg-white rounded-lg p-6 shadow">
-            <h3 class="font-semibold text-gray-800 text-base sm:text-lg">
-              Tech Mahindra (MTN Ghana) – Accra, GH | IT NOC Engineer | 2024
-            </h3>
-            <ul class="list-decimal list-inside mt-4 text-gray-700 space-y-2 text-sm sm:text-base">
-              <li>Continuously monitor network systems, servers, and applications to ensure they are functioning
-                correctly.</li>
-              <li>Identify and diagnose network and system issues to minimize downtime and impact on operations.</li>
-              <li>Analyze network performance metrics and system logs to identify trends and areas for improvement.</li>
-              <li>Implement and recommend changes to enhance network performance, reliability, and efficiency.</li>
-              <li>Respond to and manage alerts generated by monitoring tools, ensuring timely resolution of issues.</li>
-              <li>Document and track incidents and resolutions in the ticketing system.</li>
-              <li>Perform routine maintenance tasks such as software updates, patches, and hardware replacements.</li>
-              <li>Maintain detailed documentation of network configurations, procedures, and troubleshooting steps.</li>
-            </ul>
-          </div>
+                <div class="flex w-full md:w-1/2 items-center">
+                    <div class="w-full">
+                        <img class="w-full max-h-[50vh] md:max-h-[70vh] object-contain" src="./assets/images/bgimg.png"
+                            alt="My Pic">
+                    </div>
+                    <div class="flex flex-col justify-center items-center gap-4 sm:gap-8">
+                        <span class="rotate-90 text-xs hidden sm:block">Follow Me</span>
+                        <div class="flex flex-col gap-2 w-4 sm:w-6">
+                            <a href="https://www.instagram.com/accounts/settings/?entrypoint=profile" target="_blank">
+                                <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5 w-full"
+                                    src="./assets/images/instagram.png" alt="IG">
+                            </a>
+                            <a href="https://x.com/khojooppong?s=21" target="_blank">
+                                <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5 w-full"
+                                    src="./assets/images/twitter.png" alt="X">
+                            </a>
+                            <a href="https://www.linkedin.com/in/prince-darfour-a8195b23b/" target="_blank">
+                                <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5 w-full"
+                                    src="./assets/images/linkedin.png" alt="Linkedin">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-          <div class="bg-white rounded-lg p-6 shadow">
-            <h3 class="font-semibold text-gray-800 text-base sm:text-lg">
-              American Tower Corporation (ATC) – Accra, GH | NOC Support | 2022 – 2023
-            </h3>
-            <ul class="list-decimal list-inside mt-4 text-gray-700 space-y-2 text-sm sm:text-base">
-              <li>Monitored network systems and infrastructure, ensuring optimal performance and availability.</li>
-              <li>Responded to network incidents and outages promptly, performing troubleshooting and root cause
-                analysis
-                to minimize downtime.</li>
-              <li>Collaborated with cross-functional teams, including network engineers and system administrators, to
-                resolve complex network issues.</li>
-              <li>Utilized network monitoring tools to identify potential bottlenecks, security threats, and performance
-                degradation.</li>
-              <li>Implemented network changes and configurations following standard operating procedures and change
-                management protocols.</li>
-              <li>Prepared and maintained detailed documentation, including incident reports, network diagrams, and
-                SOPs.
-              </li>
-              <li>Participated in on-call rotations to provide 24/7 support for critical network operations.</li>
-              <li>Assisted in network capacity planning and performance optimization activities.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+        <!-- Skills Section -->
+        <section id="skills" class="animate__animated animate__backInDown animate__slower py-12">
+            <h1 class="mb-8 font-bold text-center text-2xl sm:text-3xl md:text-4xl">My Skills</h1>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-6 sm:gap-8 w-full max-w-2xl mx-auto">
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-200 rounded-full p-2">
+                        <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5 w-16 sm:w-20"
+                            src="./assets/images/asset1.png" alt="HTML">
+                    </div>
+                    <p class="mt-2 text-center">HTML</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-200 rounded-full p-2">
+                        <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5 w-16 sm:w-20"
+                            src="./assets/images/asset2.png" alt="CSS">
+                    </div>
+                    <p class="mt-2 text-center">CSS</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-gray-200 rounded-full p-2">
+                        <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5 w-16 sm:w-20"
+                            src="./assets/images/asset3.png" alt="JavaScript">
+                    </div>
+                    <p class="mt-2 text-center">JavaScript</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div>
+                        <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5 w-20 sm:w-24"
+                            src="./assets/images/asset4.png" alt="Tailwind">
+                    </div>
+                    <p class="mt-2 text-center">Tailwind</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div>
+                        <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5 w-24 sm:w-28"
+                            src="./assets/images/asset10.png" alt="Github">
+                    </div>
+                    <p class="mt-2 text-center">Github</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div>
+                        <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5 w-12 sm:w-16"
+                            src="./assets/images/asset6.png" alt="ReactJs">
+                    </div>
+                    <p class="mt-2 text-center">ReactJs</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- Contact Section -->
+        <!-- Project Section -->
+        <section id="projects" class="animate__backInDown animate__slower py-12 px-4 sm:px-6 md:px-12">
+            <div class="bg-[#3E6553] p-4 sm:p-6 md:p-10 rounded-2xl">
+                <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 md:mb-16 text-white">Projects
+                </h1>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+                    <!-- Card 1 -->
+                    <a href="https://prime-auuttos.netlify.app/" target="_blank">
+                        <div
+                            class="rounded-2xl p-6 shadow-lg flex flex-col items-center bg-white transform transition duration-300 hover:scale-105">
+                            <img src="./assets/images/books.jpg" alt="Authentication Logo"
+                                class="w-32 h-16 mb-4 object-contain" />
+                            <h2 class="text-base sm:text-lg font-bold mb-2">BookieApp</h2>
+                            <p class="text-gray-600 text-center text-sm">Built and designed a responsive Library
+                                management webapp
+                                using React, tailwind css and javascript with Restful API integrations</p>
+                        </div>
+                    </a>
+
+                    <!-- Card 2 -->
+                    <a href="https://prime-auuttos.netlify.app/" target="_blank">
+                        <div
+                            class="rounded-2xl p-6 shadow-lg flex flex-col items-center bg-white transform transition duration-300 hover:scale-105">
+                            <img src="./assets/images/handyman.jpg" alt="Authentication Logo"
+                                class="w-32 h-16 mb-4 object-contain" />
+                            <h2 class="text-base sm:text-lg font-bold mb-2">Prime auttos</h2>
+                            <p class="text-gray-600 text-center text-sm">An advertising website for users to post
+                                adverts and reach
+                                large user market</p>
+                        </div>
+                    </a>
+                    <!-- Card 3 -->
+                    <a href="https://authentication-blue-seven.vercel.app/" target="_blank">
+                        <div
+                            class="rounded-2xl p-6 shadow-lg flex flex-col items-center bg-white transform transition duration-300 hover:scale-105">
+                            <img src="./assets/images/authlogo.png" alt="Authentication Logo"
+                                class="w-32 h-16 mb-4 object-contain" />
+                            <h2 class="text-base sm:text-lg font-bold mb-2">Authentication</h2>
+                            <p class="text-gray-600 text-center text-sm">A website created for users to log in and
+                                register to an
+                                e-commerce website at their convenience</p>
+                        </div>
+                    </a>
+
+                    <!-- Card 1 -->
+                    <a href="https://authentication-blue-seven.vercel.app/" target="_blank">
+                        <div
+                            class="rounded-2xl p-6 shadow-lg flex flex-col items-center bg-white transform transition duration-300 hover:scale-105">
+                            <img src="./assets/images/authlogo.png" alt="Authentication Logo"
+                                class="w-32 h-16 mb-4 object-contain" />
+                            <h2 class="text-base sm:text-lg font-bold mb-2">Authentication</h2>
+                            <p class="text-gray-600 text-center text-sm">A website created for users to log in and
+                                register to an e-commerce website at their convenience</p>
+                        </div>
+                    </a>
+                    <!-- Card 2 -->
+                    <a href="https://landing-page-mu-bice.vercel.app/" target="_blank">
+                        <div
+                            class="rounded-2xl p-6 shadow-lg flex flex-col items-center bg-white transform transition duration-300 hover:scale-105">
+                            <img src="./assets/images/asset0.png" alt="Landing-Page"
+                                class="w-32 sm:w-48 h-16 mb-4 object-contain" />
+                            <h2 class="text-base sm:text-lg font-bold mb-2">Save our Soul</h2>
+                            <p class="text-gray-600 text-center text-sm">A charity website created to spread love to
+                                orphan children and war displaced kids across the globe.</p>
+                        </div>
+                    </a>
+                    <!-- Card 3 -->
+                    <a href="#">
+                        <div
+                            class="rounded-2xl p-6 shadow-lg flex flex-col items-center bg-white transform transition duration-300 hover:scale-105">
+                            <img src="./assets/images/restaurant-logo.jpg" alt="Pokemon Logo"
+                                class="w-32 sm:w-48 h-16 mb-4 object-contain" />
+                            <h2 class="text-base sm:text-lg font-bold mb-2">Food Landing Page</h2>
+                            <p class="text-gray-600 text-center text-sm">Development of a responsive website for a
+                                renowned restaurant in Ghana.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="py-12 px-4 sm:px-6 md:px-10">
+            <div class="bg-[#3E6553] p-4 sm:p-6 md:p-10 rounded-2xl">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-white mb-8 md:mb-10">Experience
+                </h2>
+                <div class="max-w-4xl mx-auto space-y-6">
+                    <!-- Experience 1 -->
+                    <div class="bg-white rounded-lg p-6 shadow">
+                        <h3 class="font-semibold text-gray-800 text-base sm:text-lg">
+                            MestAfrica – Accra, GH | Software Engineer - Frontend Web Developer | 2025 – Current
+                            <h3 class="font-semibold text-gray-800">
+                                MestAfrica– Accra, GH | Web Delepoment Code Class - Internship | 05/2025 – 10/2025
+                            </h3>
+                            <ul class="list-decimal list-inside mt-4 text-gray-700 space-y-2 text-sm sm:text-base">
+                                <li>Developed and maintained responsive, user-friendly interfaces with
+                                    <strong>React.js</strong>,
+                                    <strong>Tailwind CSS</strong>, and <strong>JavaScript</strong>.
+                                </li>
+                                <li>Collaborated with UX/UI designers to implement high-fidelity wireframes into
+                                    production-ready code.
+                                </li>
+                                <li>Integrated <strong>REST APIs</strong> to handle dynamic data and enhance user
+                                    interactivity.</li>
+                                <li>Optimized performance, improving load speed by 35% through lazy loading and code
+                                    splitting.</li>
+                                <li>Utilized <strong>Git</strong>, GitHub, and Agile methodology for effective team
+                                    collaboration.</li>
+                                <li>Built reusable components and <strong>custom hooks</strong>, improving development
+                                    efficiency and code
+                                    maintainability.</li>
+                            </ul>
+                    </div>
+                    <!-- Experience 2 -->
+                    <div class="bg-white rounded-lg p-6 shadow">
+                        <h3 class="font-semibold text-gray-800 text-base sm:text-lg">
+                            Tech Mahindra (MTN Ghana) – Accra, GH | IT NOC Engineer | 2024
+                            <h3 class="font-semibold text-gray-800">
+                                American Tower Corperation, GH | National Service | 08/2024 – 10/2024
+                            </h3>
+                            <ul class="list-decimal list-inside mt-4 text-gray-700 space-y-2 text-sm sm:text-base">
+                                <li>Continuously monitor network systems, servers, and applications to ensure they are
+                                    functioning
+                                    correctly.</li>
+                                <li>Identify and diagnose network and system issues to minimize downtime and impact on
+                                    operations.</li>
+                                <li>Analyze network performance metrics and system logs to identify trends and areas for
+                                    improvement.</li>
+                                <li>Implement and recommend changes to enhance network performance, reliability, and
+                                    efficiency.</li>
+                                <li>Respond to and manage alerts generated by monitoring tools, ensuring timely
+                                    resolution of issues.</li>
+                                <li>Document and track incidents and resolutions in the ticketing system.</li>
+                                <li>Perform routine maintenance tasks such as software updates, patches, and hardware
+                                    replacements.</li>
+                                <li>Maintain detailed documentation of network configurations, procedures, and
+                                    troubleshooting steps.</li>
+                            </ul>
+                    </div>
+                            <!-- Experience 2 -->
+                    <div class="bg-white rounded-lg p-6 shadow">
+                        <h3 class="font-semibold text-gray-800 text-base sm:text-lg">
+                            American Tower Corporation (ATC) – Accra, GH | NOC Support | 2022 – 2023
+                        </h3>
+                        <ul class="list-decimal list-inside mt-4 text-gray-700 space-y-2 text-sm sm:text-base">
+                            <li>Monitored network systems and infrastructure, ensuring optimal performance and
+                                availability.</li>
+                            <li>Responded to network incidents and outages promptly, performing troubleshooting and root
+                                cause
+                                analysis
+                                to minimize downtime.</li>
+                            <li>Collaborated with cross-functional teams, including network engineers and system
+                                administrators, to
+                                resolve complex network issues.</li>
+                            <li>Utilized network monitoring tools to identify potential bottlenecks, security threats,
+                                and performance
+                                degradation.</li>
+                            <li>Implemented network changes and configurations following standard operating procedures
+                                and change
+                                management protocols.</li>
+                            <li>Prepared and maintained detailed documentation, including incident reports, network
+                                diagrams, and
+                                SOPs.
+                            </li>
+                            <li>Participated in on-call rotations to provide 24/7 support for critical network
+                                operations.</li>
+                            <li>Assisted in network capacity planning and performance optimization activities.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+       <!-- Contact Section -->
     <section id="contact" class="flex flex-col max-w-6xl mx-auto mt-10 px-4 sm:px-6 md:px-10 py-16">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
         <!-- Left side: Contact Info -->
