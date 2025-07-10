@@ -23,12 +23,12 @@
         </a>
         <button class="md:hidden hamburger text-2xl bg-white dark:bg-gray-800" aria-label="Toggle menu">☰</button>
         <div class="nav-links hidden md:flex justify-evenly gap-8 text-normal">
-            <a href="#hero" class="underline">Home</a>
+            <a href="#hero" class="hover:underline">Home</a>
             <a href="#skills" class="hover:underline">Skills</a>
             <a href="#projects" class="hover:underline">Projects</a>
             <a href="#contact" class="hover:underline">Contact</a>
             <a href="https://github.com/dashboard" target="_blank" class="hover:underline">Github</a>
-            <button class="bg-white dark:bg-gray-800" id="theme-toggle">🔅</button>
+            <button class="bg-white dark:bg-gray-800" id="theme-toggle"><span id="theme-icon">🔅</span></button>
         </div>
     </nav>
 
@@ -40,7 +40,8 @@
         <a href="#projects" class="py-2 px-4 hover:bg-gray-100">Projects</a>
         <a href="#contact" class="py-2 px-4 hover:bg-gray-100">Contact</a>
         <a href="https://github.com/dashboard" target="_blank" class="py-2 px-4 hover:bg-gray-100">Github</a>
-        <button class="bg-white dark:bg-gray-800 py-2 px-4 hover:bg-gray-100">🔅</button>
+        <button id="theme-toggle-mobile" class="bg-white dark:bg-gray-800  px-4 hover:bg-gray-100"> <span
+                id="theme-icon-mobile">🔅</span></button>
     </div>
 
     <!-- Main Section -->
@@ -80,7 +81,7 @@
                         <span class="rotate-90 text-xs hidden sm:block">Follow Me</span>
                         <div class="flex flex-col gap-2 w-4 sm:w-6">
                             <a href="https://www.instagram.com/accounts/settings/?entrypoint=profile" target="_blank">
-                                <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5 w-full"
+                                <img class="transform transition duration-300 hover:scale-110 hover:-translate-y-5 w-full "
                                     src="./assets/images/instagram.png" alt="IG">
                             </a>
                             <a href="https://x.com/khojooppong?s=21" target="_blank">
@@ -173,7 +174,8 @@
                             <img src="./assets/images/handyman.jpg" alt="Authentication Logo"
                                 class="w-32 h-16 mb-4 object-contain" />
                             <h2 class="text-base sm:text-lg font-bold mb-2">Prime auttos</h2>
-                            <p class="text-gray-600 text-center text-sm">An advertising website for users to post adverts and reach large user market and charging vendors a token</p>
+                            <p class="text-gray-600 text-center text-sm">An advertising website for users to post
+                                adverts and reach large user market and charging vendors a token</p>
                         </div>
                     </a>
                     <!-- Card 3 -->
@@ -195,7 +197,8 @@
                             <img src="./assets/images/eventhive.png" alt="Authentication Logo"
                                 class="w-32 h-16 mb-4 object-contain" />
                             <h2 class="text-base sm:text-lg font-bold mb-2">Event Hive</h2>
-                            <p class="text-gray-600 text-center text-sm">Event Hive is your go-to platform for organizing
+                            <p class="text-gray-600 text-center text-sm">Event Hive is your go-to platform for
+                                organizing
                                 and discovering events across campus! </p>
                         </div>
                     </a>
@@ -480,23 +483,41 @@
         </script>
 
         <script>
-            const toggle = document.getElementById("theme-toggle");
             const root = document.documentElement;
+            const toggleButtons = [
+                { btn: document.getElementById("theme-toggle"), icon: document.getElementById("theme-icon") },
+                { btn: document.getElementById("theme-toggle-mobile"), icon: document.getElementById("theme-icon-mobile") }
+            ];
 
-            if (localStorage.getItem("theme") === "dark") {
-                root.classList.add("dark");
+            function setThemeIcon(isDark) {
+                toggleButtons.forEach(({ icon }) => {
+                    if (icon) {
+                        icon.textContent = isDark ? "🔅" : "🌙";
+                    }
+                });
             }
 
-            toggle.addEventListener("click", () => {
-                root.classList.toggle("dark");
-                // Save Preference
-                if (root.classList.contains("dark")) {
-                    localStorage.setItem("theme", "dark");
-                } else {
-                    localStorage.setItem("theme", "light");
+            // On initial load
+            const isDarkStored = localStorage.getItem("theme") === "dark";
+            if (isDarkStored) {
+                root.classList.add("dark");
+            }
+            setThemeIcon(root.classList.contains("dark"));
+
+            toggleButtons.forEach(({ btn }) => {
+                if (btn) {
+                    btn.addEventListener("click", () => {
+                        root.classList.toggle("dark");
+                        const isDark = root.classList.contains("dark");
+                        localStorage.setItem("theme", isDark ? "dark" : "light");
+                        setThemeIcon(isDark);
+                    });
                 }
             });
         </script>
+
+
+
 
         <script>
             const text = "Hi I'm Prince Oppong Darfour, a Web Developer from Ghana.";
